@@ -47,6 +47,7 @@ body {
 	position: absolute;
 	top: -1px;
 }
+/* 左边栏 */
 .sidebar-nav {
 	position:fixed;
 	width:200px;
@@ -86,14 +87,14 @@ body {
 .demo .preview { display: none; }
 .demo .box .view { display: block; padding-top:30px;}
 
-
-.ui-draggable-dragging .view { display:block;}
-/*.demo .ui-sortable-placeholder { outline: 5px dotted #ddd; visibility: visible!Important; border-radius: 4px; }*/
+/* jquery-ui 虚线占位框 */
+/* .demo .ui-sortable-placeholder { outline: 5px dotted #ddd; visibility: visible!Important; border-radius: 4px; } */
 .ui-sortable-placeholder { outline: 1px dashed #ddd;visibility: visible!Important; border-radius: 4px;}
+/* 用于在拖动时展示dom实体，view中存放的是模板实体dom */
+.ui-draggable-dragging .view { display:block; }
+
 .edit .drag { position: absolute; top: 0;right: 0; cursor: pointer; }
-
 .box,.lyrow { position:relative;}
-
 .edit .demo .lyrow .drag { top:5px; right:80px; z-index:10; }
 .edit .demo .column .box .drag { top:5px; }
 .edit .demo .column .box .configuration {position: absolute; top: 3px; right: 140px;white-space:nowrap; }
